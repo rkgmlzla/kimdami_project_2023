@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign up 페이지</title>
+        <link rel="stylesheet" href="adduser_style.css">
+    </head>
+    <body>
+        <form method="post" action="/process/adduser"> <!-- action : 폼을 전송할 서버 쪽 스크립트 파일 지정-->
+            <div class="PAGE_NAME">
+                <h1>사용자 등록 페이지</h1>
+            </div>
+            <br> 
+                <a href="./login.html"><img class="back-img" src="./BACK.png"></a>
+            <div class="ADDUSER_PART">
+                <div class="ADDUSER">
+                    <table>
+                        <tr>
+                            <td><label><b>아이디</b></label></td>
+                            <td><input type="text" name="id"></td> 
+                        </tr>
+                        <tr>
+                            <td><label><b>이름</b></label></td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label><b>나이</b></label></td>
+                            <td><input type="text" name="age"></td>
+                        </tr>
+                        <tr>
+                            <td><label><b>패스워드</b></label></td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                    </table>
+                    <div id="ENTER">
+                        <button class="button" type="submit">확인</button>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </body>
+</html>
