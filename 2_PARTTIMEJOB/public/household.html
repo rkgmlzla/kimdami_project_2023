@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./household.css">
+    <title>가계부 알바</title>
+  </head>
+  <body>
+    <!--<form method="post" action="/process/add"></form>-->
+     <!-- 테이블 헤드 부분 -->
+     <table class="head" style="table-layout: fixed;">
+      <colgroup>
+        <col width="20%">
+        <col width="40%">
+        <col width="40%">
+        <col width="15%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>day</th><th>price</th><th>memo</th><th>delete</th>
+        </tr>
+      </thead>
+    </table>
+
+    <!-- 테이블 행렬 부분 -->
+    <div class="head_table_div">
+     <table id="head_table" style="table-layout:fixed;">
+      <colgroup>
+        <col width="20%">
+        <col width="40%">
+        <col width="40%">
+        <col width="15%">
+      </colgroup>
+      <tbody id="my-tbody"></tbody>
+     </table>
+    </div>
+    <!-- 합계 부분 -->
+    <td><h4 class="sum" id="sum">합계 : </h4></td>
+    <!-- 추가하기 부분 -->
+    <div class="input_table" >
+      <tr>
+        <td><p><input type="text" class="input" id="day" placeholder="day(ex:2023.02.15)" autocomplete="off"></p></td>
+      </tr>
+      <tr>
+        <td><p><input type="text" class="input" id="amount" placeholder="price" autocomplete="off"></p></td>
+      </tr>
+      <tr>
+        <td><p><input type="text" class="input" id="memo" placeholder="memo" autocomplete="off"></p></td>
+      </tr>
+      <tr>
+        <td><p><button class="inputSubmit" id="enter" onclick="add_Row()">submit</button></p></td>
+      </tr>
+    </div> 
+    <script src="parttimejob.js"></script> 
+  </body>
+</html>
