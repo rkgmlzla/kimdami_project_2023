@@ -3,4 +3,5 @@
     "user" : "root",
     "password" : "asdf",
     "database" : "asdf"
-}
+} 
+//password, database 이름 각자 sql로 변경하여 사용! 
